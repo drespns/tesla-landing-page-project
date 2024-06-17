@@ -1,0 +1,39 @@
+---
+interface Props {
+    textColor?: string;
+}
+const {textColor} = Astro.props;
+
+import TeslaLogo from "./TeslaLogo.astro";
+---
+
+<header class={`fixed flex items-center justify-between top-0 w-full font-[Supernova] from-neutral-400 to-slate-500
+    font-bold px-10 py-4 z-40 ${textColor} bg-opacity-0`}>
+    <!-- <h1 class="">Tesla Landing</h1> -->
+
+    <!-- <div class="flex flex-1 bg-black">
+        <img class="size-32" src="/favicon.svg" alt="Tesla imagen">
+    </div> -->
+    <div class="flex flex-1">
+        <TeslaLogo />
+    </div>
+    <nav class="flex">
+        <ul class="flex gap-1 text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+            <li><a href="#">Model S</a></li>
+            <li><a href="#">Model 3</a></li>
+            <li><a href="#">Model X</a></li>
+            <li><a href="#">Model Y</a></li>
+            <li><a href="#">Powerwall</a></li>
+            <li><a href="#">Carga</a></li>
+        </ul>
+    </nav>
+    
+    <nav class="flex flex-1 justify-end">
+        <ul class="flex gap-1 text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
+            <li><a href="#">Soporte</a></li>
+            <li><a href="#">Tienda</a></li>
+            <li><a href="#">Cuenta</a></li>
+            <li><a href="#">Menu</a></li>
+        </ul>
+    </nav>
+</header>

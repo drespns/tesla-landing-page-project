@@ -1,0 +1,28 @@
+---
+// interface Props {
+//     title: string;
+// }
+
+// // Astro.props;
+---
+
+<section class="box-border flex flex-col relative bg-slate-900 text-white h-screen w-full text-center overflow-x-hidden">
+    <!-- flex flex-col justify-between items-center -->
+    <header class="relative z-30 w-full">
+        <h2 class="pt-40 text-5xl font-medium">Disfrute de tesla</h2>
+        <p class="text-md font-medium">Programe una prueba de conducción hoy mismo</p>
+    </header>
+    <footer class="relative z-30 flex flex-col flex-1 justify-end pb-24">
+        <a href="#">
+            <button class="rounded-full bg-white/5 backdrop-blur-lg shadow-md hover:shadow-xl 
+            hover:shadow-slate-600/60 px-6 py-3 hover:ring-1 hover:ring-slate-700 hover:bg-slate-300 
+            hover:text-black ring-1 ring-slate-50 transition-colors duration-75 delay-0 ease-in-out">
+                Prueba de conducción
+            </button>
+        </a>
+    </footer>
+
+    <video autoplay muted loop src="/video.webm" class="absolute top-0 left-0 object-cover object-center size-full z-10 overflow-x-hidden"></video>
+    <!-- h-full w-full -> size-full -->
+    <!-- inset-0 -->
+</section>
